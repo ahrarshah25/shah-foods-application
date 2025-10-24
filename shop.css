@@ -1,0 +1,56 @@
+body {
+      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+}
+
+.shop-section {
+      padding: 60px 20px;
+}
+
+.shop-title {
+      text-align: center;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 50px;
+}
+
+.card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+}
+
+.card:hover {
+      transform: translateY(-5px);
+}
+
+.card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+}
+
+.btn-orange {
+      background-color: #ff7b00;
+      height: 40px;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+      background-color: #e96e00;
+}
+footer {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ff7b00;
+      text-decoration: none;
+    }

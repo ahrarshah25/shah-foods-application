@@ -1,0 +1,119 @@
+    body {
+      background: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .typing {
+      font-size: 32px;
+      color: #ff7b00;
+      border-right: 3px solid #ff7b00;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3.5s steps(30) forwards, blink 0.9s infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes typing {
+      from { 
+        width: 0; 
+      }
+      to {
+        width: 280px;
+       }
+    }
+    @keyframes blink {
+      0%, 100% {
+         border-color: transparent; 
+        }
+      50% {
+         border-color: #ff7b00; 
+        }
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .carousel-caption h5 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    .carousel-caption p {
+      font-size: 1.1rem;
+    }
+    .featured {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .featured h2 {
+      color: #222;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .btn-orange {
+      background-color: #ff7b00;
+      height: 30px;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .btn-orange:hover {
+      background-color: #e96e00;
+    }
+    .why-us {
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+    }
+    .why-us h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #222;
+    }
+    .why-us .icon-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .why-us .icon-box h5 {
+      margin-top: 15px;
+      color: #333;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ff7b00;
+      text-decoration: none;
+    }
+    .btn-orange2 {
+      background-color: #ff7b00;
+      margin-left: 600px;
+      margin-right: 300;
+      margin-bottom: 50px;
+      width: 100px;
+      height: 55px;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .btn-orange2:hover {
+      background-color: #e96e00;
+    }
