@@ -8,27 +8,44 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="/assets/logo.png" alt="Logo" width="30" height="30" class="me-2">
         Shah Foods
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          <a class="nav-link" href="./shop.html">Shop!</a>
-          <a class="nav-link" href="./about.html">About Us!</a>
-          <a class="nav-link" href="./contact.html">Contact Us!</a>
-          <a class="nav-link" href="./profile.html">Profile!</a>
+        <div class="navbar-nav ms-auto text-center">
+          <a class="nav-link active" href="./index.html">Home</a>
+          <a class="nav-link" href="./shop.html">Shop</a>
+          <a class="nav-link" href="./about.html">About Us</a>
+          <a class="nav-link" href="./contact.html">Contact Us</a>
+          <a class="nav-link" href="./profile.html">Profile</a>
         </div>
       </div>
-      <button class="btn btn-outline-secondary" type="submit" onclick="userLogin()">Login / SignUp</button>
+      <button class="btn btn-outline-secondary ms-lg-3" type="button" onclick="userLogin()">Login / SignUp</button>
     </div>
   </nav>
-  <div class="profile-container">
-    <img class="w-25 mb-3" src="./assets/logo.png">
-    <button class="submit-btn ms-5" onclick="userLogout()">Logout</button>
+
+  <div class="profile-container text-center">
+    <div class="last-login-card mx-auto">
+      <div class="last-login-header">
+        <img src="https://img.icons8.com/fluency/48/clock--v1.png" alt="Clock Icon">
+        <div class="ms-2 text-start">
+          <p class="mb-0 fw-semibold text-light small">Last Login</p>
+          <p id="userLastLogin" class="mb-0 fw-bold text-light">22 Oct 2025, 11:35 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <img class="user-avatar mt-4 mb-3" src="./assets/logo.png" alt="User Logo">
+
+    <button class="submit-btn mb-4" onclick="userLogout()">Logout</button>
 
     <div class="profile-item">
       <span class="label">Name:</span> <span id="userNameDisplay">User</span>
@@ -42,12 +59,12 @@
       <span class="label">Cart Items:</span>
       <div id="userCartDisplay">No items in cart</div>
     </div>
-    <button class="submit-btn" onclick="continueShoping()">Continue Shoping</button>
-    <br>
-    <br>
-    <button class="submit-btn" onclick="userProduct()">Proceed To CheckOut</button>
-  </div>
-<footer>
+
+    <button class="submit-btn me-2 mt-3" onclick="continueShoping()">Continue Shopping</button>
+    <button class="submit-btn ms-2 mt-3" onclick="userProduct()">Proceed To Checkout</button>
+  </div> 
+
+  <footer>
     <p>&copy; 2025 Shah Foods. All Rights Reserved.</p>
     <p>
       <a href="./about.html">About</a> | 

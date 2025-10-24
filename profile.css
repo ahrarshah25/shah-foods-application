@@ -1,54 +1,95 @@
 body {
-      background-color: #fff;
-      font-family: 'Poppins', sans-serif;
-    }
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
 
-    .profile-container {
-      max-width: 800px;
-      margin: 60px auto;
-      background: #f8f9fa;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
+.profile-container {
+  max-width: 800px;
+  margin: 80px auto;
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.last-login-card {
+  background: linear-gradient(90deg, #ff7b00 0%, #ff944d 100%);
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
-    .profile-title {
-      text-align: center;
-      font-weight: 700;
-      color: #222;
-      margin-bottom: 30px;
-    }
+.last-login-header {
+  display: flex;
+  align-items: center;
+}
 
-    .profile-item {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #dee2e6;
-    }
+.last-login-header img {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+}
+.user-avatar {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-    .label {
-      font-weight: 600;
-      color: #333;
-    }
-    .submit-btn {
-      background-color: #ff7b00;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
+.profile-item {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+  text-align: left;
+}
 
-    .submit-btn:hover {
-      background-color: #e96e00;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    footer a {
-      color: #ff7b00;
-      text-decoration: none;
-    }
+.label {
+  font-weight: 600;
+  color: #333;
+}
+.submit-btn {
+  background-color: #ff7b00;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  background-color: #e96e00;
+}
+footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff7b00;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 25px;
+    margin: 50px 15px;
+  }
+  .last-login-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .last-login-header {
+    flex-direction: column;
+  }
+  .last-login-header img {
+    margin-bottom: 6px;
+  }
+  .profile-item {
+    text-align: center;
+  }
+}

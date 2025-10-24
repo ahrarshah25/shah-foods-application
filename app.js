@@ -27,12 +27,17 @@ var userModalMessage = document.getElementById("userModalMessage").innerText = "
 
 var sendNotification = document.getElementById("sendNotification");
 var userFound = localStorage.getItem("userFound" , "true");
-// var openModal = document.getElementById("openModal");
 if(userFound){
     document.getElementById("sendNotification").innerText = "1";
+}else if(!userFound){
+    document.getElementById("modalWelcome").innerText = "No Notification!"
+    document.getElementById("userModalMessage").innerText = "No Notification!"
 };
 
-// // var notificationSeen = localStorage.setItem("notificationSeen" , "false")
-// if(notificationSeen === "false"){
-//     document.getElementById("sendNotification").innerText = "10";
-// }
+function greetNotification(){
+    localStorage.setItem("notification" , "seen")
+    document.getElementById("sendNotification").innerText = "";
+};
+if(localStorage.getItem("notification" , "seen")){
+    document.getElementById("sendNotification").innerText = "";
+}

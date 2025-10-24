@@ -1,56 +1,84 @@
 body {
-      background-color: #fff;
-      font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
 .shop-section {
-      padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .shop-title {
-      text-align: center;
-      font-weight: 700;
-      color: #222;
-      margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 50px;
 }
 
 .card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .card:hover {
-      transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      height: 180px;
-      object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
 }
 
+.card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Orange Buttons */
 .btn-orange {
-      background-color: #ff7b00;
-      height: 40px;
-      border: none;
-      color: white;
-      border-radius: 10px;
-      transition: all 0.3s ease;
+  background-color: #ff7b00;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .btn-orange:hover {
-      background-color: #e96e00;
+  background-color: #e96e00;
+  transform: scale(1.03);
 }
+
+/* Footer */
 footer {
-      background: #222;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    footer a {
-      color: #ff7b00;
-      text-decoration: none;
-    }
+  background: #222;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff7b00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

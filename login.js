@@ -17,6 +17,16 @@ function userLogin(){
     if(!regex.test(userEmailInput)){
         alert("Please Enter Correct Mail!\nFor Example: name@domain.com");
     }else if(userEmailInput === userEmail && userPasswordInput === userPassword){
+        var lastLogin = new Date()
+        var lastLogin2 = lastLogin.getDate()
+        var lastLogin3 = lastLogin.getMonth()
+        var lastLogin4 = lastLogin.getFullYear()
+        var lastLogin5 = lastLogin.getHours()
+        var lastLogin6 = lastLogin.getMinutes()
+        var lastLogin7 = lastLogin.getSeconds()
+        var result ="\nDate: " + lastLogin2 + "/" + lastLogin3 + "/" + lastLogin4 + " \nTime: " + lastLogin5 + ":" + lastLogin6 + ":" +lastLogin7;
+        // alert(result); 
+        localStorage.setItem("result" , result); 
         localStorage.setItem("userFound" , "true")
         alert("Login Successful.");
         window.location.href = "profile.html"
