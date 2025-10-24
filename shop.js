@@ -3,13 +3,13 @@ console.log("JS Connected!");
 
 
 function firstProductCart(){
-    product = "Classic Beef Burger"
+    product1 = "Classic Beef Burger"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
     alert("Classic Beef Burger Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    localStorage.setItem("product1" , product1);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -49,13 +49,13 @@ function userProduct(){
 // };
 
 function secondProductCart(){
-    product = "Cheese Loaded Pizza"
+    product2 = "Cheese Loaded Pizza"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product2 + " Added To Cart Successfuly!")
+    localStorage.setItem("product2" , product2);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -63,13 +63,13 @@ if(userFound === "true"){
 };
 
 function thirdProductCart(){
-    product = "Creamy Alfredo Pasta"
+    product3 = "Creamy Alfredo Pasta"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product3 + " Added To Cart Successfuly!")
+    localStorage.setItem("product3" , product3);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -77,13 +77,13 @@ if(userFound === "true"){
 };
 
 function fourthProductCart(){
-    product = "Grilled Chicken Sandwich"
+    product4 = "Grilled Chicken Sandwich"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product4 + " Added To Cart Successfuly!")
+    localStorage.setItem("product4" , product4);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -91,13 +91,13 @@ if(userFound === "true"){
 };
 
 function fifthProductCart(){
-    product = "Hyderabadi Biryani"
+    product5 = "Hyderabadi Biryani"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product5 + " Added To Cart Successfuly!")
+    localStorage.setItem("product5" , product5);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -105,13 +105,13 @@ if(userFound === "true"){
 };
 
 function sixthProductCart(){
-    product = "Chicken Tikka"
+    product6 = "Chicken Tikka"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product6 + " Added To Cart Successfuly!")
+    localStorage.setItem("product6" , product6);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -119,13 +119,13 @@ if(userFound === "true"){
 };
 
 function seventhProductCart(){
-    product = "Crispy Fries"
+    product7 = "Crispy Fries"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product7 + " Added To Cart Successfuly!")
+    localStorage.setItem("product7" , product7);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -133,13 +133,13 @@ if(userFound === "true"){
 };
 
 function eighthProductCart(){
-    product = "Zinger Wrap"
+    product8 = "Zinger Wrap"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product8 + " Added To Cart Successfuly!")
+    localStorage.setItem("product8" , product8);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -147,13 +147,13 @@ if(userFound === "true"){
 };
 
 function ninthProductCart(){
-    product = "Chicken Nuggets"
+    product9 = "Chicken Nuggets"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product9 + " Added To Cart Successfuly!")
+    localStorage.setItem("product9" , product9);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -161,13 +161,13 @@ if(userFound === "true"){
 };
 
 function tenthProductCart(){
-    product = "Chocolate Shake"
+    product10 = "Chocolate Shake"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product10 + " Added To Cart Successfuly!")
+    localStorage.setItem("product10" , product10);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -175,13 +175,13 @@ if(userFound === "true"){
 };
 
 function eleventhProductCart(){
-    product = "Vanilla Ice Cream"
+    product11 = "Vanilla Ice Cream"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product11 + " Added To Cart Successfuly!")
+    localStorage.setItem("product11" , product11);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
@@ -189,13 +189,13 @@ if(userFound === "true"){
 };
 
 function twelfthProductCart(){
-    product = "Chocolate Brownie"
+    product12 = "Chocolate Brownie"
     var userFound = localStorage.getItem("userFound" , "true");
 
 if(userFound === "true"){
 
-    alert(product + " Added To Cart Successfuly!")
-    localStorage.setItem("product" , product);
+    alert(product12 + " Added To Cart Successfuly!")
+    localStorage.setItem("product12" , product12);
 }else{
     alert("Please Login To Your Account First!")
     window.location.href = "login.html"
