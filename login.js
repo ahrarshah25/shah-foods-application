@@ -8,12 +8,15 @@ function userLogin(){
     // var userFound = false;
     var userEmailInput = document.getElementById("email").value.trim();
     var userPasswordInput = document.getElementById("password").value.trim();
+    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if(userEmailInput === "" && userPasswordInput === ""){
         alert("Please Enter Required Information To Login Your Account!");
         return;
     }
-    if(userEmailInput === userEmail && userPasswordInput === userPassword){
+    if(!regex.test(userEmailInput)){
+        alert("Please Enter Correct Mail!\nFor Example: name@domain.com");
+    }else if(userEmailInput === userEmail && userPasswordInput === userPassword){
         localStorage.setItem("userFound" , "true")
         alert("Login Successful.");
         window.location.href = "profile.html"

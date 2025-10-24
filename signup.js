@@ -6,12 +6,15 @@ function userSignup(){
     var userEmail = document.getElementById("email").value.trim();
     var userPassword = document.getElementById("password").value.trim();
     var userConfirmPassword = document.getElementById("confirm_password").value.trim();
+    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if(userName === "" && userEmail === "" && userPassword === "" && userConfirmPassword === ""){
         alert("Please Give Required Information To Register Your Account.")
     }else if(userName === localStorage.getItem("userName" , userName) && userEmail === localStorage.getItem("userEmail" , userEmail)){
         alert("User Already Exist Login Please!")
         window.location.href = "login.html"
+    }else if(!regex.test(userEmail)){
+        alert("Please Enter Correct Mail!\nFor Example: name@domain.com");
     }else{
         localStorage.setItem("userName" , userName);
         localStorage.setItem("userEmail" , userEmail);
