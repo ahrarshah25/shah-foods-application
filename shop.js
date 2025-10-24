@@ -16,28 +16,37 @@ if(userFound === "true"){
 }
 };
 
-
 var userName = localStorage.getItem("userName" , userName);
 var userEmail = localStorage.getItem("userEmail" , userEmail);
 
 function userProduct(){
-    var userOrderID = Math.floor(Math.random()*15000000+130)
     var userFound = localStorage.getItem("userFound" , "true")
     if(userFound === "true"){
-        var userAddress = prompt("Type Your Address");
-        var userNumber = prompt("Type Your Contact Number");
-        if(userAddress === "" && userNumber === ""){
-            alert("Please Type Your Address And Contact Number")
-        }else{
-            localStorage.setItem("userAddress" , userAddress);
-            localStorage.setItem("userNumber" , userNumber);
-            alert("Your Order Have Been Place Succesfuly!\nYour Data Is\nName: " + userName +"\nEmail: " + userEmail + "\nAddress: " + userAddress + "\nContact Number: " + userNumber + "\nPayment Method (Default): COD (Cash On Delivery).\nOrder Id: " + userOrderID)
-        }
+        window.location.href = "checkout.html"
     }else{
         alert("Please Login To Your Account First");
         window.location.href = "login.html"
     }
-};
+}
+
+// function userProduct(){
+//     var userOrderID = Math.floor(Math.random()*15000000+130)
+//     var userFound = localStorage.getItem("userFound" , "true")
+//     if(userFound === "true"){
+//         var userAddress = prompt("Type Your Address");
+//         var userNumber = prompt("Type Your Contact Number");
+//         if(userAddress === "" && userNumber === ""){
+//             alert("Please Type Your Address And Contact Number")
+//         }else{
+//             localStorage.setItem("userAddress" , userAddress);
+//             localStorage.setItem("userNumber" , userNumber);
+//             alert("Your Order Have Been Place Succesfuly!\nYour Data Is\nName: " + userName +"\nEmail: " + userEmail + "\nAddress: " + userAddress + "\nContact Number: " + userNumber + "\nPayment Method (Default): COD (Cash On Delivery).\nOrder Id: " + userOrderID)
+//         }
+//     }else{
+//         alert("Please Login To Your Account First");
+//         window.location.href = "login.html"
+//     }
+// };
 
 function secondProductCart(){
     product = "Cheese Loaded Pizza"

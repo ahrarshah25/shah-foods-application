@@ -1,0 +1,65 @@
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.checkout-section {
+  padding: 60px 20px;
+}
+
+.checkout-title {
+  text-align: center;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.checkout-box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  padding: 30px;
+}
+
+.form-control {
+  border-radius: 10px !important;
+  border: 1px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+.submit-btn {
+  background-color: #ff7b00;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: #e96e00;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff7b00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .checkout-box {
+    padding: 20px;
+  }
+}
