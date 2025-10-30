@@ -19,7 +19,8 @@ if(userFound === "true"){
 var userName = localStorage.getItem("userName" , userName);
 var userEmail = localStorage.getItem("userEmail" , userEmail);
 
-function userProduct(){
+function userProduct(productName){
+    localStorage.setItem("userProductName" , productName);
     var userFound = localStorage.getItem("userFound" , "true")
     if(userFound === "true"){
         window.location.href = "checkout.html"

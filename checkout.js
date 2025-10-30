@@ -1,10 +1,12 @@
 var userName = localStorage.getItem("userName" , userName);
 var userEmail = localStorage.getItem("userEmail" , userEmail);
 var userFound = localStorage.getItem("userFound" , "true");
-
+var productName = localStorage.getItem("userProductName");
 
 var userNameDisplay = document.getElementById("userNameDisplay").innerText = userName;
 var userEmailDisplay = document.getElementById("userEmailDisplay").innerText = userEmail;
+var userProductDisplay = document.getElementById("userProductDisplay").innerText = productName;
+// alert("product is " + productName);
 if(userFound === "true"){
 function userOrder(){
     // var userName = document.getElementById("userName").innerText = userName;
