@@ -49,7 +49,6 @@ body {
   color: #666;
 }
 
-/* Orange Buttons */
 .btn-orange {
   background-color: #ff7b00;
   height: 40px;
@@ -65,7 +64,6 @@ body {
   transform: scale(1.03);
 }
 
-/* Footer */
 footer {
   background: #222;
   color: #fff;
